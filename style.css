@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+:root {
+    --main-bg-color: #444444;
+    --main-text-color: #fff;
+}
+
+/* GLobal */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+* {
+    font-family: 'Lato', Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    align-items: center;
+}
+
+li {
+    text-align: center;
+    padding: 5px;
+    color: #333;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    padding: 3px;
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    align-items: center;
+    color: #f7f7f7;
+    background-color: #333;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
+    height: 100px;
+    width: 100%;
+}
+
+#header h1 {
+    margin: 0 20px;
+}
+
+/* Profit Section */
+
+#profit-container {
+    padding: 20px;
+}
+
+/* Entry Section */
+
+#entry {
+    padding: 40px;
+}
+
+#entry-container {
+    width: 100%;
+    text-align: center;
+}
+
+#input-value,
+#description-value {
+    margin: 0 5px;
+    height: 30px;
+}
+
+#submit-btn,
+#menu {
+    margin: 0 5px;
+    width: 10%;
+    height: 34px;
+}
+
+/* Entry Display Section */
+
+#entry-display-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#entry-wrapper {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-direction: row;
+}
+
+#income-column,
+#expense-column {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 10px;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.income-entry-display {
+    background-color: #a0ffc5;
+    width: 70%
+}
+
+.expense-entry-display {
+    background-color: #ff6464;
+    width: 70%
+}
+
+.income-display-ul,
+.expense-display-ul {
+    display: none;
+}
+
+.income-display-ul.show,
+.expense-display-ul.show {
+    display: flex;
+    gap: 1em;
+    justify-content: space-around; 
+}
+
+@media only screen and (max-width: 767px) {
+    #entry-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #input-value,
+    #description-value,
+    #submit-btn,
+    #menu {
+        width: 50%;
+    }
+
+    #entry-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #income-column,
+    #expense-column {
+        width: 100%;
+    }
+}

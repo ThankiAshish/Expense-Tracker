@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <div id="header">
+      <h1>Expense Tracker</h1>
+    </div>
+
+    <div id="profit-container" class="flex">
+        <h1 class="total">$0</h1>
+    </div>
+
+    <div id="entry" class="flex">
+      <div id="entry-container">
+        <select id="menu">
+          <option value="Income" selected>Income</option>
+          <option value="Expense">Expense</option>
+        </select>
+        <input id="input-value" type="number" placeholder="Enter Value" required>
+        <input id="description-value" type="text" placeholder="Enter Description">
+        <button id="submit-btn">Submit</button>
+      </div>
+    </div>
+      
+    <div id="entry-display-container">
+      <div id="entry-wrapper">
+        <div id="income-column">
+          <!-- <div class="income-entry-display">
+            <ul class="income-display-ul">
+              <li class="income-value-view"></li>
+              <li class="income-option-view"></li>
+              <li class="income-description-view"></li>
+              <a href=""><li class="fas fa-times-circle remove"></li></a>
+            </ul>
+          </div> -->
+        </div>
+        <div id="expense-column">
+          <!-- <div class="expense-entry-display">
+            <ul class="expense-display-ul">
+              <li class="expense-value-view"></li>
+              <li class="expense-option-view"></li>
+              <li class="expense-description-view"></li>
+              <a href=""><li class="fas fa-times-circle remove"></li></a>
+            </ul>
+          </div>   -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <button id="calculate-btn">Calculate</button> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
