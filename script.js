@@ -64,7 +64,7 @@ function newEntry(type) {
 }
 
 function getInput() {
-  if(input.value > 0) {
+  if(input.value > 0 && input.value < 1000000) {
     tracker.push(
       {
         value: input.value,
@@ -90,7 +90,7 @@ function getInput() {
     i++;
   }
   else {
-    alert("Please Enter Value Greater than 0");
+    alert("Please Enter Values between 1 and 1000000");
   }
   calculateTotal();
 }

@@ -80,8 +80,17 @@ a {
     height: 30px;
 }
 
+#input-value:focus,
+#description-value:focus {
+    outline: none;
+}
+
 #submit-btn,
 #menu {
+    background-color: #ececec;
+    border: none;
+    cursor: pointer;
+    outline: none;
     margin: 0 5px;
     width: 10%;
     height: 34px;
