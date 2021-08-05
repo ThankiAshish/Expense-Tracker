@@ -38,7 +38,6 @@ li {
 
 a {
     text-decoration: none;
-    color: #444;
     padding: 3px;
 }
 
@@ -47,7 +46,6 @@ a {
 #header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     color: #f7f7f7;
     background-color: #333;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.1);
@@ -59,28 +57,10 @@ a {
     margin: 0 20px;
 }
 
-#header a {
-    color: #f7f7f7;
-    padding: 20px;
-    font-size: 25px;
-    transition: all .2s linear;
-}
-
-#header a:hover {
-    color: #777;
-    transform: scale(1.1);
-}
-
 /* Profit Section */
 
 #profit-container {
-    margin: 20px auto;
-    background-color: #f7f7f7;
-    width: 10%;
-    color: #444;
-    box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 5%;
-    padding: 30px 20px;
+    padding: 20px;
 }
 
 /* Entry Section */
@@ -130,7 +110,7 @@ a {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 10px; 
+    padding: 0 10px;
     flex-direction: row;
 }
 
@@ -192,10 +172,5 @@ a {
     #income-column,
     #expense-column {
         width: 100%;
-    }
-
-    #profit-container {
-        width: 20%;
-        font-size: 10px;
     }
 }

@@ -19,6 +19,7 @@ let expenseValueViews = document.querySelectorAll(".expense-value-view");
 let expenseOptionViews = document.querySelectorAll(".expense-option-view");
 let expenseDescriptionViews = document.querySelectorAll(".expense-description-view");
 
+
 let tracker = [];
 let i = 0;
 let incUl = 0;
